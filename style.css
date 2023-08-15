@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* border: solid 2px red;*/
+   border: solid 2px red;
 }
 
 body {
@@ -64,5 +64,15 @@ footer {
 
 .card-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: rgb(41, 41, 41);
+  border-radius: 15px;
+}
+
+.card-img {
+display: flex;
+border-radius: 10px;
+align-items: center;
+
 }

@@ -139,8 +139,7 @@ const buscarObjeto = (id) => {
 
 const buscandoIngredientes = (pizza) => {
   return pizza.ingredientes
-    .map((ingrediente) => ` ${ingrediente}`)
-    .join("");
+    .map((ingrediente) => ` ${ingrediente}`);
 };
 
 const imagen = (url) => {
