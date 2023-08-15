@@ -57,11 +57,11 @@ const saveLocalStorage = () => {
 const numPizza = document.querySelector(".numeroB");
 const btnSearch = document.getElementById ("boton");
 const container = document.querySelector (".card-container");
-const merror = document.querySelector(".merror");
+//const merror = document.querySelector(".merror");
 
 
 const armoHtml = (pizza) => {
-
+    container.innerHTML = ``;
     let card = document.createElement('div');
     card.classList.add('card');
     
@@ -152,16 +152,14 @@ const mensajeError = (mensaje) => {
         /*
          let cardError = document.createElement('div');
          cardError.classList.add('card-error');
-
          let cardErrorMensaje = document.createElement("h2");
          cardErrorMensaje.classList.add("card-Error-Mens");
-         cardErrorMensaje.innerText = mensaje;
-
+         cardErrorMensaje.innerText = mensaje
          */
          //merror.innerHTML = `<p>${mensaje}</p>`;
          //merror.appendChild (cardErrorMensaje);
          container.innerHTML = ``;
-         container.style.background = "none";
+         //container.style.background = "none";
          container.innerHTML = `
            <div class="card-error">
                    <div class="error-title">Error</div>
