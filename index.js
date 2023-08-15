@@ -87,7 +87,7 @@ const armoHtml = (pizza) => {
     card.appendChild(cardPrecio);
     
   
-  return container.appendChild(card); //document.body.appendChild(card);
+  return container.appendChild(card); 
   
 };
     
@@ -126,7 +126,7 @@ const buscarObjeto = (id) => {
   if (pizzaEncontrada) {
     console.log("Pizza encontrada:", pizzaEncontrada);
     armoHtml(pizzaEncontrada);
-   // imagen(pizzaEncontrada.imagen);
+   
 
     // Guardar el último ID visitado en localStorage
     localStorage.setItem("ultimoId", id);
@@ -148,22 +148,12 @@ const imagen = (url) => {
 
 //mostrar error
 const mensajeError = (mensaje) => {
-        /*
-         let cardError = document.createElement('div');
-         cardError.classList.add('card-error');
-         let cardErrorMensaje = document.createElement("h2");
-         cardErrorMensaje.classList.add("card-Error-Mens");
-         cardErrorMensaje.innerText = mensaje
-         */
-         //merror.innerHTML = `<p>${mensaje}</p>`;
-         //merror.appendChild (cardErrorMensaje);
+
          container.innerHTML = ``;
-         //container.style.background = "none";
          container.innerHTML = `
            <div class="card-error">
                    <div class="error-title">Error</div>
                    <div class="error-cuerpo">
-                       
                        <p>${mensaje}</p>
                    </div>
                    <button id="btnError" class="btn-error">OK</button>
